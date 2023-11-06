@@ -1,0 +1,1060 @@
+body{
+    background-color: #FAF7F0;
+}
+
+.Aster{
+    display: inline-block;
+    background: white;
+    width: 100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+}
+
+.Aster img{
+    float: left;
+    width: 100px;
+    height: 70px;
+    padding-right:500px;
+}
+
+/* Add a black background color to the top navigation */
+.bar{
+    overflow: hidden;
+  }
+  /* Style the links inside the navigation bar */
+  .bar a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-family: Arial;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  
+  .bar a:hover{
+    background-color:#FAF7F0;
+    color: #BCCEF8;
+  }
+  /* Add an active class to highlight the current page */
+  /*look at this its not acttivated*/
+  .bar a.active{
+    background-color:#BCCEF8;
+    text-align: center;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+  
+  .bar .icon{
+    display: none;
+  }
+  .logIn{
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    
+  }
+  .logIn a{
+    background-color:#BCCEF8 ;
+    float: left;
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-family: Arial;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+
+ .logIn a:hover{
+  background-color:#CDFCF6;
+ }
+/*dropdown products botton*/
+.dropbtn {
+    float: left;
+    text-decoration: none;
+    color:black;
+    font-family: Arial;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 17px;
+    background-color: white;
+    width: 100%;
+   
+
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #BCCEF8;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position:inherit;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    
+  }
+  .dropdown-content button{
+    border:transparent solid 0px;
+    background-color: #BCCEF8;
+  }
+  .dropdown-content button:hover{
+    background-color: #BCCEF8;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 25px 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display:list-item;}
+
+  /*store products itmes*/  
+  .displaybox{
+    width: 85%;
+    padding-top: 0px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15), 1px 1px 1px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  
+  .dis{
+    height: 300px;
+    width: 300px;
+    margin: 40px 0 60px 0;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+    position:relative;
+    z-index: 100;
+  }
+  
+  .dis1{
+    background: url("products/1lipstic.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  
+  .dis2{
+    background: url("products/2lipstic.jpeg") no-repeat center center;
+   background-size: 87%;
+   background-color: white;
+  }
+  
+  .dis3{
+    background: url("products/3lipstic.jpeg") no-repeat center center;
+   background-size: 92%;
+   background-color: white;
+  }
+  
+  .dis4{
+    background: url("products/4lipstic.jpeg") no-repeat center center;
+   background-size: 94%;
+   background-color: white;
+  }
+  
+  .dis5{
+    background: url("products/5lipstic.jpeg") no-repeat center center;
+   background-size: 88%;
+   background-color: white;
+  }
+  
+  .dis6{
+    background: url("products/6lipstic.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  
+  
+  .dislogo{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin-left: 15px;
+    border-radius: 100%;
+    border: solid 3px white;
+    box-shadow: inset 1px 1px 0px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.15);
+    z-index: 500;
+    transition: all ease 0.5s;
+    float: left;
+  }
+  
+  .dislogo1{
+    background: url("image/Aster.JPG") no-repeat center center;
+    background-size: 100%;
+    background-color: black;
+  }
+  
+  .disdis{
+    float: left;
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    margin-top: 10px;
+    z-index: 20;
+    position: relative;
+  }
+  
+  .distopwrap{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+    z-index: 20;
+  }
+  
+  .disprice{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .disbut{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    border: none;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .faspace{
+    margin-right: 10px;
+  }
+  
+  .roll:hover .distopwrap{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: all ease 0.5s;
+  } 
+  
+  .roll:hover .disdis{
+    opacity: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .roll:hover .disprice{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  
+  .roll:hover .disbut{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  
+  .disbut:hover{
+    background-color: rgba(200,20,20,0.6);
+    transition: all ease 0.5s;
+  }
+/*SkinCare products*/
+
+.displaybox2{
+    width: 85%;
+    padding-top: 0px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15), 1px 1px 1px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  
+  .dis2{
+    height: 300px;
+    width: 300px;
+    margin: 40px 0 60px 0;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+    position:relative;
+    z-index: 100;
+  }
+
+  
+  .dis7{
+    background: url("products/1skinCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+
+  .dis8{
+    background: url("products/2skinCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis9{
+    background: url("products/3skinCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis10{
+    background: url("products/4skinCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis11{
+    background: url("products/5skinCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis12{
+    background: url("products/6skinCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  
+  .dislogo{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin-left: 15px;
+    border-radius: 100%;
+    border: solid 3px white;
+    box-shadow: inset 1px 1px 0px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.15);
+    z-index: 500;
+    transition: all ease 0.5s;
+    float: left;
+  }
+  
+  .dislogo1{
+    background: url("image/Aster.JPG") no-repeat center center;
+    background-size: 100%;
+    background-color: black;
+  }
+  
+  .disdis{
+    float: left;
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    margin-top: 10px;
+    z-index: 20;
+    position: relative;
+  }
+  
+  .distopwrap{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+    z-index: 20;
+  }
+  
+  .disprice{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .disbut{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    border: none;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .faspace{
+    margin-right: 10px;
+  }
+  
+  .roll:hover .distopwrap{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: all ease 0.5s;
+  } 
+  
+  .roll:hover .disdis{
+    opacity: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .roll:hover .disprice{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  
+  .roll:hover .disbut{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  
+  .disbut:hover{
+    background-color: rgba(200,20,20,0.6);
+    transition: all ease 0.5s;
+  }
+
+  /*Hair products*/
+
+
+.displaybox3{
+    width: 85%;
+    padding-top: 0px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15), 1px 1px 1px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  
+  .dis3{
+    height: 300px;
+    width: 300px;
+    margin: 40px 0 60px 0;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+    position:relative;
+    z-index: 100;
+  }
+.dis13{
+    background: url("products/1hairCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  
+  .dis14{
+    background: url("products/2hairCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+
+  .dis15{
+    background: url("products/3hairCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis16{
+    background: url("products/4hairCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis17{
+    background: url("products/5hairCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis18{
+    background: url("products/6hairCare.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+ 
+  
+  .dislogo{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin-left: 15px;
+    border-radius: 100%;
+    border: solid 3px white;
+    box-shadow: inset 1px 1px 0px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.15);
+    z-index: 500;
+    transition: all ease 0.5s;
+    float: left;
+  }
+  
+  .dislogo1{
+    background: url("image/Aster.JPG") no-repeat center center;
+    background-size: 100%;
+    background-color: black;
+  }
+  
+  .disdis{
+    float: left;
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    margin-top: 10px;
+    z-index: 20;
+    position: relative;
+  }
+  
+  .distopwrap{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+    z-index: 20;
+  }
+  
+  .disprice{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .disbut{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    border: none;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .faspace{
+    margin-right: 10px;
+  }
+  
+  .roll:hover .distopwrap{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: all ease 0.5s;
+  } 
+  
+  .roll:hover .disdis{
+    opacity: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .roll:hover .disprice{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  
+  .roll:hover .disbut{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  
+  .disbut:hover{
+    background-color: rgba(200,20,20,0.6);
+    transition: all ease 0.5s;
+  }
+
+
+  /*perfume products*/
+
+
+.displaybox4{
+    width: 85%;
+    padding-top: 0px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15), 1px 1px 1px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  
+  .dis4{
+    height: 300px;
+    width: 300px;
+    margin: 40px 0 60px 0;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+    position:relative;
+    z-index: 100;
+  }
+.dis19{
+    background: url("products/1perfume.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  
+  .dis20{
+    background: url("products/2perfume.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis21{
+    background: url("products/3perfume.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+
+  .dis22{
+    background: url("products/4perfume.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis23{
+    background: url("products/5perfume.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis24{
+    background: url("products/6perfume.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+
+
+  
+  .dislogo{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin-left: 15px;
+    border-radius: 100%;
+    border: solid 3px white;
+    box-shadow: inset 1px 1px 0px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.15);
+    z-index: 500;
+    transition: all ease 0.5s;
+    float: left;
+  }
+  
+  .dislogo1{
+    background: url("image/Aster.JPG") no-repeat center center;
+    background-size: 100%;
+    background-color: black;
+  }
+  
+  .disdis{
+    float: left;
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    margin-top: 10px;
+    z-index: 20;
+    position: relative;
+  }
+  
+  .distopwrap{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+    z-index: 20;
+  }
+  
+  .disprice{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .disbut{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    border: none;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .faspace{
+    margin-right: 10px;
+  }
+  
+  .roll:hover .distopwrap{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: all ease 0.5s;
+  } 
+  
+  .roll:hover .disdis{
+    opacity: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .roll:hover .disprice{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  
+  .roll:hover .disbut{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  
+  .disbut:hover{
+    background-color: rgba(200,20,20,0.6);
+    transition: all ease 0.5s;
+  }
+
+
+   /*BathAndBody products*/
+
+
+.displaybox5{
+    width: 85%;
+    padding-top: 0px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15), 1px 1px 1px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+.displaybox5 h1{
+ font-size: 20px;
+}
+  
+  .dis5{
+    height: 300px;
+    width: 300px;
+    margin: 40px 0 60px 0;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+    position:relative;
+    z-index: 100;
+  }
+.dis25{
+    background: url("products/1bathAndBody.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  
+  .dis26{
+    background: url("products/2bathAndBody.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis27{
+    background: url("products/3bathAndBody.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+
+  .dis28{
+    background: url("products/4bathAndBody.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis29{
+    background: url("products/5bathAndBody.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+  .dis30{
+    background: url("products/6bathAndBody.jpeg") no-repeat center center;
+   background-size: 80%;
+   background-color: white;
+  }
+
+
+  
+  .dislogo{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin-left: 15px;
+    border-radius: 100%;
+    border: solid 3px white;
+    box-shadow: inset 1px 1px 0px rgba(0,0,0,0.15), 1px 1px 3px rgba(0,0,0,0.15);
+    z-index: 500;
+    transition: all ease 0.5s;
+    float: left;
+  }
+  
+  .dislogo1{
+    background: url("image/Aster.JPG") no-repeat center center;
+    background-size: 100%;
+    background-color: black;
+  }
+  
+  .disdis{
+    float: left;
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    margin-top: 10px;
+    z-index: 20;
+    position: relative;
+  }
+  
+  .distopwrap{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+    z-index: 20;
+  }
+  
+  .disprice{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .disbut{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.7);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    opacity: 0;
+    border: none;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    transition: all ease 0.5s;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  }
+  
+  .faspace{
+    margin-right: 10px;
+  }
+  
+  .roll:hover .distopwrap{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: all ease 0.5s;
+  } 
+  
+  .roll:hover .disdis{
+    opacity: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .roll:hover .disprice{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  
+  .roll:hover .disbut{
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  
+  .disbut:hover{
+    background-color: rgba(200,20,20,0.6);
+    transition: all ease 0.5s;
+  }
+
+
+  /*footer  193bb8  #2448cb */
+
+  * {
+    font-family: Arial;
+    
+  }
+  
+  section {
+    width: 100%;
+    display: inline-block;
+    background: white;
+    height: 60vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    
+  }
+  
+  .footer-distributed {
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 100px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+  }
+
+
+
+
+  
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: black;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed  {
+      text-align: center;
+    }
+    .footer-distributed {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }

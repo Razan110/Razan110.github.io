@@ -1,0 +1,313 @@
+body{
+    background-color: #FAF7F0;
+}
+
+.Aster{
+    display: inline-block;
+    background: white;
+    width: 100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+}
+
+.Aster img{
+    float: left;
+    width: 100px;
+    height: 70px;
+    padding-right:500px;
+}
+
+/* Add a black background color to the top navigation */
+.bar{
+    overflow: hidden;
+  }
+  /* Style the links inside the navigation bar */
+  .bar a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-family: Arial;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  
+  .bar a:hover{
+    background-color:#FAF7F0;
+    color: #BCCEF8;
+  }
+  /* Add an active class to highlight the current page */
+  /*look at this its not acttivated*/
+  .bar a.active{
+    background-color:#BCCEF8;
+    text-align: center;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+  
+  .bar .icon{
+    display: none;
+  }
+  .logIn{
+    overflow: hidden;
+    
+  }
+  .logIn a{
+    background-color:#BCCEF8 ;
+    float: left;
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-family: Arial;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+
+  .SignIn a{
+    background-color:#BCCEF8 ;
+  }
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: white;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    margin-bottom: 30px;
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #BCCEF8;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+/*SignIn*/
+
+.sername input{
+    padding: 20px 35px;
+    color: black;
+}
+
+.Password input{
+    padding: 20px 35px;
+    color: black;
+}
+.SignInButton button{
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: #BCCEF8;
+    color: black;
+    padding: 25px 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SignInButton button:hover{
+   
+    background-color:#CDFCF6;
+}
+
+.SignUpButton button{
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: #BCCEF8;
+    color: black;
+    padding: 25px 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SignUpButton button:hover{
+   
+    background-color:#CDFCF6;
+}
+  /* social  */
+  
+.ContactUsOnSocailMedia{
+     padding-top:600px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+   
+}
+.ContactUsOnSocailMedia p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+  }
+
+  .Socail img{
+    width: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+  }
+
+  ul {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    background-color: white;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+  }
+  
+  ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  ul li a .fab {
+    widht: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  
+
+
+  
+
